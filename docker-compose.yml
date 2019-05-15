@@ -10,6 +10,6 @@ services:
                          - "7777:7777/udp"
                          - "7:7/udp"
                 volumes:
-                        - Game.ini:
+                         - ./Game.ini:/home/steam/pavlovserver/Pavlov/Saved/Config/LinuxServer/Game.ini
 
 
