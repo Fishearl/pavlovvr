@@ -1,0 +1,14 @@
+[Unit]
+Description=Pavlov VR dedicated server
+
+[Service]
+Type=simple
+WorkingDirectory=/home/steam/pavlovserver
+ExecStart=/home/steam/pavlovserver/PavlovServer.sh
+RestartSec=30
+Restart=on-failure
+User=steam
+Group=steam
+
+[Install]
+WantedBy = multi-user.target
