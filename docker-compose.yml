@@ -9,5 +9,7 @@ services:
                          - "7200:7200/udp"
                          - "7777:7777/udp"
                          - "7:7/udp"
+                volumes:
+                        - Game.ini:
 
 
