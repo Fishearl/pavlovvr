@@ -1,0 +1,13 @@
+version: "2"
+services:
+        pavlov:
+                image: pavlov:1.0
+                restart: unless-stopped
+                user: steam
+                ports:
+                         - "7000:7000/udp"
+                         - "7200:7200/udp"
+                         - "7777:7777/udp"
+                         - "7:7/udp"
+
+
